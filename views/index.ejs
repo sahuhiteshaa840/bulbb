@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to hitesh sahu <%= title %></p>
+
+    <img src="img/bulb.jpg" alt="" id="bulb">
+    <div>
+        <button onclick="on()">off</button>
+        <button onclick="off()">on</button>
+    </div>
+    <script> 
+        function on(){
+            document.getElementById("bulb").src="../images/bulb.jpg";
+        } function off(){
+            document.getElementById("bulb").src="../images/bulb1.jpg";
+
+        }
+    </script>
+  </body>
+</html>
